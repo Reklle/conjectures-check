@@ -1,0 +1,18 @@
+# Compiled stuff
+/target/
+**/*.rs.bk
+
+# IDE files
+/.idea/
+/.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Cargo lock file (include it if you want to pin dependencies)
+# Uncomment this line if you're working in a team and want reproducible builds
+# Otherwise, leave it out for now
+# /Cargo.lock
