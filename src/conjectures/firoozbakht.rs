@@ -1,6 +1,6 @@
 use primal::Primes;
 
-// The inequality $p_{n+1}-p_n < (\log p_n)^2-\log p_n$ holds for all prime numbers $p_n > 7$.
+// The inequality $p_{n+1}-p_n < (\log p_n)^2-\log p_n$ holds for $n > 4$.
 // A consequence of Firuzbakht's conjecture.
 pub fn check_consequence(max_n: usize) {
 
@@ -24,7 +24,7 @@ pub fn check_consequence(max_n: usize) {
         let rhs = log_p.powi(2) - log_p;
 
         if gap >= rhs {
-            violations.push((i, primes[i], gap, rhs));
+            violations.push((i, primes[i-1], gap, rhs));
         }
     }
 
